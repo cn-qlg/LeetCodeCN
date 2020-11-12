@@ -5,6 +5,8 @@
 #
 from typing import List
 # @lc code=start
+
+
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         if not strs:
@@ -16,7 +18,7 @@ class Solution:
                     return first_words[0:index]
         return first_words
 
-    # def longestCommonPrefix(self, strs: List[str]) -> str:
+    # def longestCommonPrefix_1(self, strs: List[str]) -> str:
     #     if not strs or len(strs) == 0:
     #         return ""
     #     longest_length = -1
@@ -36,5 +38,6 @@ class Solution:
 
 # @lc code=end
 
-print(Solution().longestCommonPrefix(["flower","flow","flight"]))
-print(Solution().longestCommonPrefix(["dog","racecar","car"]))
+
+print(Solution().longestCommonPrefix(["flower", "flow", "flight"]))
+print(Solution().longestCommonPrefix(["dog", "racecar", "car"]))
