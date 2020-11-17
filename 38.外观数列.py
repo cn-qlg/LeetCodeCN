@@ -10,7 +10,7 @@ class Solution:
         if n == 1:
             return "1"
         say = ["1"]
-        for i in range(2, n+1):
+        for _ in range(2, n+1):
             pre = say[0]
             count = 1
             cur_say = []
