@@ -1,8 +1,17 @@
+from typing import List
+
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 
 """
@@ -73,3 +82,24 @@ def generate_tree_4():
     """
     head = TreeNode(0)
     return head
+
+
+def build_list(nodes: List[int]) -> ListNode:
+    head = ListNode()
+    p1 = head
+
+    for v in nodes:
+        node = ListNode(v)
+        p1.next = node
+        p1 = p1.next
+
+    return head.next
+
+
+def print_list_node(head: ListNode):
+    values = []
+    p = head
+    while p:
+        values.append(str(p.val))
+        p = p.next
+    print("->".join(values))
