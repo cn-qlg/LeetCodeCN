@@ -18,8 +18,6 @@ class Solution(object):
         cost(i)表示第i层的费用
         f(i) = min(f(i-1) + cost(i-1), f(i-2) + cost(i-2))
         """
-        if len(cost) < 2:
-            return 0
         s = list()
         s.append(0)
         s.append(0)
