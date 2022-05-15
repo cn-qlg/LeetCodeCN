@@ -3,6 +3,10 @@
 #
 # [704] 二分查找
 #
+"""
+解题思路：
+1. 二分查找法
+"""
 from typing import List
 # @lc code=start
 
