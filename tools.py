@@ -13,6 +13,12 @@ class ListNode:
         self.val = val
         self.next = next
 
+    def __str__(self) -> str:
+        return str(self.val)
+    
+    def __repr__(self) -> str:
+        return self.__str__()
+
 
 """
 先序遍历：DLR
