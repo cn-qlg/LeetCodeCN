@@ -9,7 +9,7 @@ class Solution:
                 p = i
                 print(p,q, word)
                 if q is not None and (p - q ) < minLength:
-                    minLength = p - i 
+                    minLength = p - q
             elif word == word2:
                 q = i
                 print(p,q, word)
