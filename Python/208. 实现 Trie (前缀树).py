@@ -7,10 +7,9 @@ class Trie:
     def __init__(self):
         self.data = {}
     插入的时候就依次遍历，当前key不存在，就插入
-    所以，apple插入之后会变成这样{"a}    
-
-已有：apple，需要查找：app，
-
+    所以，apple插入之后会变成这样{'a': {'p': {'p': {'l': {'e': {}}}}}}  
+    但是此种状态，无法确定是否同时插入了app，ap，appl等。因此考虑第二个版本加入结束符。
+最终代码如下：
 """
 class Trie:
 
